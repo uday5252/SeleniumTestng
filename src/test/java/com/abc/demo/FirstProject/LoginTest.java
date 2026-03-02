@@ -6,10 +6,18 @@ import org.testng.annotations.Test;
 public class LoginTest {
 
 	@Test
-	public void verifyTitle()
-	{
-		ChromeDriver driver = new ChromeDriver();
-		System.out.println(driver.getTitle());
+	public void verifyTitle() {
+	    System.out.println("===== TEST STARTED =====");
+
+	    ChromeDriver driver = new ChromeDriver();
+	    driver.get("https://www.google.com");
+
+	    String title = driver.getTitle();
+	    System.out.println("TITLE IS: " + title);
+
+	    driver.quit();
+
+	    System.out.println("===== TEST ENDED =====");
 	}
 	
 }
