@@ -3,7 +3,7 @@ package com.abc.demo.FirstProject;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class Login {
+public class LoginTest {
 
 	@Test
 	public void verifyTitle()
